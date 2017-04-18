@@ -1,11 +1,11 @@
 <?php
-/** 
- * Configuración básica de WordPress.
+/**
+ * Configuraciï¿½n bï¿½sica de WordPress.
  *
  * Este archivo contiene las siguientes configuraciones: ajustes de MySQL, prefijo de tablas,
- * claves secretas, idioma de WordPress y ABSPATH. Para obtener más información,
- * visita la página del Codex{@link http://codex.wordpress.org/Editing_wp-config.php Editing
- * wp-config.php} . Los ajustes de MySQL te los proporcionará tu proveedor de alojamiento web.
+ * claves secretas, idioma de WordPress y ABSPATH. Para obtener mï¿½s informaciï¿½n,
+ * visita la pï¿½gina del Codex{@link http://codex.wordpress.org/Editing_wp-config.php Editing
+ * wp-config.php} . Los ajustes de MySQL te los proporcionarï¿½ tu proveedor de alojamiento web.
  *
  * This file is used by the wp-config.php creation script during the
  * installation. You don't have to use the web site, you can just copy this file
@@ -21,24 +21,25 @@ define('DB_NAME', 'brick');
 /** Tu nombre de usuario de MySQL */
 define('DB_USER', 'root');
 
-/** Tu contraseña de MySQL */
+/** Tu contraseï¿½a de MySQL */
+
 define('DB_PASSWORD', '');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
 define('DB_HOST', 'localhost');
 
-/** Codificación de caracteres para la base de datos. */
+/** Codificaciï¿½n de caracteres para la base de datos. */
 define('DB_CHARSET', 'utf8mb4');
 
 /** Cotejamiento de la base de datos. No lo modifiques si tienes dudas. */
 define('DB_COLLATE', '');
 
 /**#@+
- * Claves únicas de autentificación.
+ * Claves ï¿½nicas de autentificaciï¿½n.
  *
  * Define cada clave secreta con una frase aleatoria distinta.
  * Puedes generarlas usando el {@link https://api.wordpress.org/secret-key/1.1/salt/ servicio de claves secretas de WordPress}
- * Puedes cambiar las claves en cualquier momento para invalidar todas las cookies existentes. Esto forzará a todos los usuarios a volver a hacer login.
+ * Puedes cambiar las claves en cualquier momento para invalidar todas las cookies existentes. Esto forzarï¿½ a todos los usuarios a volver a hacer login.
  *
  * @since 2.6.0
  */
@@ -57,7 +58,7 @@ define('NONCE_SALT', '1Jtoi#!mQAvy(#b1jL+m^td]tschu(<) (k8_naD2G7G%:d*@o9+ucm{<G
  * Prefijo de la base de datos de WordPress.
  *
  * Cambia el prefijo si deseas instalar multiples blogs en una sola base de datos.
- * Emplea solo números, letras y guión bajo.
+ * Emplea solo nï¿½meros, letras y guiï¿½n bajo.
  */
 $table_prefix  = 'wp_';
 
@@ -71,7 +72,7 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
-/* ¡Eso es todo, deja de editar! Feliz blogging */
+/* ï¿½Eso es todo, deja de editar! Feliz blogging */
 
 /** WordPress absolute path to the Wordpress directory. */
 if ( !defined('ABSPATH') )
@@ -79,4 +80,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-

@@ -2,12 +2,13 @@
 
 if ( function_exists('register_sidebars') ){
     register_sidebars();
-    
+
     add_theme_support( 'post-thumbnails' );
 }
 
 add_image_size( 'slider-propiedad', 368, 269, false );
 add_image_size( 'full-propiedad', 1281, 875, false );
+<<<<<<< HEAD
 ?>
 
 <?php 
@@ -30,3 +31,5 @@ function pagination($prev = '', $next = '') {
     echo paginate_links( $pagination );
 };
  ?>
+=======
+>>>>>>> 308c7845aa91da27fe7eac97852d9aef233a9310

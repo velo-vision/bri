@@ -4,7 +4,7 @@
 					<div class="col l2 s12 center">
 						<a href="<?php echo site_url();?>"><img src="<?php bloginfo("template_url");?>/images/logo-footer.png" alt="Logo Footer"></a>
 					</div>
-					<div class="col l7 s12 menu-footer center">
+					<div class="col l6 s12 menu-footer center">
 						<div class="col l12 s12">
 							<div class="col l3 s6">
 								<a href="<?php echo site_url();?>#nosotros"><p>
@@ -12,19 +12,19 @@
 								</p></a>
 							</div>
 							<div class="col l3 s6">
-								<a href="<?php echo site_url();?>/propiedades"><p>
+								<a href="<?php echo site_url("?page_id=53");?>/propiedades"><p>
 									propiedades
 								</p></a>
 							</div>
 							<div class="col l6 s12">
-								<a href="<?php echo site_url();?>/inversion"><p>
+								<a href="<?php echo site_url("?page_id=60");?>/inversion"><p>
 									brick inversión inmobiliaria
 								</p></a>
 							</div>
 						</div>
 						<div class="col l12 s12">
 							<div class="col l3 s6">
-								<a href="<?php echo site_url();?>/blog"><p>
+								<a href="<?php echo site_url("?page_id=16");?>/blog"><p>
 									blog
 								</p></a>
 							</div>
@@ -39,14 +39,17 @@
 							</div>
 						</div>
 					</div>
-					<div class="col l3 s12 design-footer center">
-						<div class="col l12 s12">
+					<div class="col l4 s12 design-footer center nomargin">
+						<div class="col l12 s12 nomargin">
 							<div class="col l6 s12 nomargin">
 								<p><i class="fa fa-phone" aria-hidden="true"></i> 55 14 52 67 90</p>
 							</div>
 							<div class="col l6 s12 nomargin">
-								<p><i class="fa fa-envelope" aria-hidden="true"></i> contacto@bricki.com</p>
+								<p><i class="fa fa-envelope" aria-hidden="true"></i> contacto@brickci.com</p>
 							</div>
+						</div>
+						<div class="col l12 s12" style="text-align:center;">
+							<p class="nomargin">Dirección: Guillermo Gonzalez Camarena #999, Int. PH 4403. Santa Fe, 01219 Mexico DF</p>
 						</div>
 						<div class="col l12 s12" style="text-align:center;">
 							<p>@2016 All Rights Reserved. Designed by Velosoft</p>
@@ -66,7 +69,7 @@
 		if(isset($detallePropiedad)): //Declaramos esta variable cuando estemos en el detalle de una propiedad ?>
 		<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDNTSMEOij97Zpc3vSSkP1pXOIWg8tH-gA&sensor=false'></script>
 		<script src="<?php bloginfo("template_url");?>/js/maps.js"></script>
-		<?php 
+		<?php
 		endif;
 		if(is_home()):
 		 ?>
@@ -147,7 +150,7 @@
 				]
 			});
 		</script>
-		
+
 		<script>
 
 		/*Scroll*/
@@ -168,7 +171,7 @@
 		});
 
 		/*slider*/
-		
+
 
 		$('.bxslider').bxSlider({
 		  mode: 'horizontal',
