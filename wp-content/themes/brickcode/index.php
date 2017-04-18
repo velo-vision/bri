@@ -25,7 +25,7 @@
 </div>
 <!-- FIN MENU -->
 
-			<?php  $post = get_post(57); ?>
+	<?php  $post = get_post(57); ?><!-- nosotros -->
 		<div class="row">
 			<div class="col l10 offset-l1 m10 offset-m1 s10 offset-s1">
 				<div class="col l6 m12 s12">
@@ -41,7 +41,7 @@
 				</div>
 			</div>
 		</div>
-
+<!-- propiedades -->
 			<div class="row">
 				<p class="propiedades">
 					propiedades
