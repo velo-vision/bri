@@ -74,6 +74,11 @@
 			<div class="col l4 m6 s12 size">
 				<figure class="effect-bubba">
 				  <img src="images/blog/1.png" alt="Brick">
+					<?php if (has_post_thumbnail()) {
+		         $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		         //echo "<img src='". $url."' class='imagen-articulo-variado' />";
+		         echo '<li class="img-variado" style="background: url('. $url.')">';
+		       ?> 
 				  <figcaption>
 				    <!-- <h2>Joe <span>Diertay</span></h2>
 				    <p>Lifes a garden, dig it</p>
@@ -259,7 +264,7 @@
 		 </div>
 		</div>
 
-		
+
 		<script src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/materialize.js"></script>
 		<script src="js/wow.min.js"></script>

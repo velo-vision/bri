@@ -37,7 +37,7 @@
 				<div class="row">
 					<div class="col l10 offset-l1 m10 offset-m1  s10 offset-s1 text" style="text-align:center;">
 						<div class="col l6 m6 s12 ojo" >
-							
+
 							<span>&nbsp;</span><img src="" alt="">
 							<span> &nbsp;</span><img src="" alt="">
 						</div>
@@ -73,11 +73,11 @@
 						</div>
 					<?php $prev_post = get_previous_post(); ?>
 
-    
+
 
 						<div class="row center">
 							<div class="col l12 m12 s10 offset-s1 center">
-								<?php if ( !empty( $prev_post ) ) : ?>  
+								<?php if ( !empty( $prev_post ) ) : ?>
 									<div class="col l6 m6 s6 anterior"  >
 										<div class="col l1 m2 s5">
 											<a href="<?php echo get_permalink( $prev_post->ID ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/blog2/anterior.png" alt=""></a>
@@ -88,7 +88,7 @@
 									</div>
 								<?php endif; ?>
 								<?php $next_post = get_next_post(); ?>
-								<?php if ( !empty( $next_post ) ) : ?> 
+								<?php if ( !empty( $next_post ) ) : ?>
 									<div class="col l6 m6 s6 siguiente">
 										<div class="col l11 m10 s8">
 											<a href="<?php echo get_permalink( $next_post->ID ); ?>"><span> Siguiente </span></a>

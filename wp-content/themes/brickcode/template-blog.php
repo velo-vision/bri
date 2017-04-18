@@ -15,37 +15,50 @@ $url1 = $src1[0];
 		</div>
 
 		<div class="row">
-			<div class="col l10 offset-l1 m12 s12">
-				<div class="col l7 m12 s12 center">
-					<img width="100%" src="<?php echo $url1;?>" alt="">
-				</div>
-				<div class="col l5">
-					<div class="row">
-						<div class="col l12 m12 s12 text-patrimonio">
-							<p class="nomargin">
-								<span><?php echo $posts_array[0]->post_title; ?></span>
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col l10 offset-l1 m12 s12 text-blog1" style="padding-bottom:40px; padding:0px;">
-							<p><?php echo $posts_array[0]->post_content ?></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col l6 m6 s12 center fecha" style="padding-top:10px;">
-							<p>
-								<span><?php echo get_the_date('j F, Y',$posts_array[0]->ID) ?> </span>
-							</p>
-						</div>
-						<div class="col l6 m6 s12">
-							<a href="<?php echo get_permalink($posts_array[0]->ID); ?>"><p class="ver-mas-patrimonio">
-								Leer más
-							</p></a>
-						</div>
-					</div>
-				</div>
-			</div>
+		  <div class="col-xs-12 col-md-12 col-lg-11 padding-category">
+		  <?php
+		    global $post;
+		    $args = array( "posts_per_page" => 1, "offset"=> 0, "category" => 1);
+		    $myposts = get_posts( $args );
+		    foreach( $myposts as $post ) : setup_postdata($post); ?>
+
+		  <div class="col l10 offset-l1 m12 s12">
+		    <div class="col l7 m12 s12 center">
+		      <?php  if (has_post_thumbnail()) {
+		         $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		         //echo "<img src='". $url."' class='imagen-articulo-variado' />";
+		         echo '<li class="img-variado" style="background: url('. $url.')">';
+		       ?>
+		    </div>
+		    <div class="col l5">
+		      <div class="row">
+		        <div class="col l12 m12 s12 text-patrimonio">
+		          <p class="nomargin">
+		            <span><?php the_title(); ?></span>
+		          </p>
+		        </div>
+		      </div>
+		      <div class="row">
+		        <div class="col l12 m12 s12 text-blog1" style="padding-bottom:40px; padding:0px;">
+		          <p><?php the_excerpt(); ?></p>
+		        </div>
+		      </div>
+		      <div class="row">
+		        <div class="col l6 m6 s12 center fecha" style="padding-top:10px;">
+		          <p>
+		            <span><?php echo get_the_date('j F, Y',$posts_array[0]->ID) ?> </span>
+		          </p>
+		        </div>
+		        <div class="col l6 m6 s12">
+		          <a href="<?php echo get_permalink($posts_array[0]->ID); ?>"><p class="ver-mas-patrimonio">
+		            Leer más
+		          </p></a>
+		        </div>
+		      </div>
+		    </div>
+		    <?php  } endforeach; ?>
+		  </div>
+		</div>
 		</div>
 
 	<div class="row" style="padding-top:80px;">
