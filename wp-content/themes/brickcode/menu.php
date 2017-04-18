@@ -28,9 +28,9 @@
                     <div class="col l12 menu-brick">
                         <ul>
                             <li><a href="<?php bloginfo( 'url' ); ?>#nosotros"><span  class="hvr-underline-from-center">nosotros</span></a></li>
-                            <li><a href="<?php bloginfo( 'url' ); ?>/propiedades"><span  class="hvr-underline-from-center">porpiedades</span></a></li>
-                            <li><a href="<?php bloginfo( 'url' ); ?>/inversion"><span  class="hvr-underline-from-center">brick inversión inmobiliaria</span></a></li>
-                            <li><a href="<?php bloginfo( 'url' ); ?>/blog"><span  class="hvr-underline-from-center">blog</span></a></li>
+                            <li><a href="<?php bloginfo( 'template_url'); ?>/propiedades"><span  class="hvr-underline-from-center">propiedades</span></a></li>
+                            <li><a href="<?php bloginfo( '?page_id=60' ); ?>/inversion"><span  class="hvr-underline-from-center">brick inversión inmobiliaria</span></a></li>
+                            <li><a href="<?php bloginfo( '?page_id=16' ); ?>/blog"><span  class="hvr-underline-from-center">blog</span></a></li>
                             <li><a href="<?php bloginfo( 'url' ); ?>#contacto"><span  class="hvr-underline-from-center">contacto</span></a></li>
                         </ul>
                     </div>

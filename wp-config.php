@@ -22,6 +22,7 @@ define('DB_NAME', 'brick');
 define('DB_USER', 'root');
 
 /** Tu contrase�a de MySQL */
+
 define('DB_PASSWORD', '');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
