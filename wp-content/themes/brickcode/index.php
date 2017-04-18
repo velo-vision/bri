@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<body>
 <div id="header-background">
 	<div class="valign-wrapper">
 		<div class="valign">
@@ -15,14 +16,15 @@
 	 <div class="links">
 		<ul>
 			<li><a href="<?php echo site_url();?>#nosotros">nosotros</a></li>
-			<li><a href="<?php echo site_url("propiedades");?>">propiedades</a></li>
-			<li><a href="<?php echo site_url("inversion");?>">brick inverisón inmobiliaria</a></li>
-			<li><a href="<?php echo site_url("blog");?> ">blog</a></li>
+			<li><a href="<?php echo site_url("?page_id=53");?>">propiedades</a></li>
+			<li><a href="<?php echo site_url("?page_id=60");?>">brick inversión inmobiliaria</a></li>
+			<li><a href="<?php echo site_url("?page_id=16");?> ">blog</a></li>
 			<li><a href="<?php echo site_url();?>#contacto">contacto</a></li>
 		</ul>
 	</div>
 </div>
 <!-- FIN MENU -->
+
 			<?php  $post = get_post(57); ?>
 		<div class="row">
 			<div class="col l10 offset-l1 m10 offset-m1 s10 offset-s1">
@@ -135,6 +137,6 @@
 	<?php 
 	include("wcode_mailer/wcode_mailer.php");
 	if(isset($_POST)){
-		wcode_mail($_POST['email'], $_POST['nombre'], "federico@velosoft.mx", "Contacto WEB");
+		wcode_mail($_POST['email'], $_POST['nombre'], "esteban@velosoft.mx", "Contacto WEB");
 	}?>
 <?php get_footer(); ?>

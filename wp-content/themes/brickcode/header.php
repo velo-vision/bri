@@ -21,4 +21,3 @@
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="<?php bloginfo("template_url");?>/css/slider-propiedades.css">
 </head>
-<body>
