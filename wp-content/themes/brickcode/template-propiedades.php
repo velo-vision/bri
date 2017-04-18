@@ -10,7 +10,7 @@ get_header();
 	global $post;
 	$args = array( "posts_per_page" => 12, "offset"=> 0, "category" => 4 ); //categoria propeidades
 	$myposts = get_posts( $args );?>
-	<div class="row">
+	<div class="row" style="margin:0px !important;">
 		<div class="col l12 m12 s12 nomargin altura-Slider">
 			<ul class="bxslider" style="margin-top:-50px;">
 	<?php foreach( $myposts as $post ) : setup_postdata($post); ?>
@@ -67,10 +67,14 @@ get_header();
 <!-- propiedades2 -->
 <?php
 	global $post;
-	$args = array( "posts_per_page" => 6, "offset"=> 0, "category" => 4 ); //categoria propeidades
+	$args = array( "posts_per_page" => 3, "offset"=> 0, "category" => 4 ); //categoria propeidades
 	$myposts = get_posts( $args );?>
-	<div class="row">
+
+	
+
+	<div class="row">	
 		<div class="col l12 s12">
+		<?php $additional_loop = new WP_Query("cat=1,2,3"); ?>
 	<?php foreach( $myposts as $post ) : setup_postdata($post); ?>
 		<!--  -->
 		<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($value->ID), 'slider-propiedad' );
@@ -95,13 +99,17 @@ get_header();
 							detalle de propiedad
 						</p></a>
 					</div>
-				</div>				
+				</div>
+
 	<?php endforeach; ?>
-			</div>
+	<?php  kriesi_pagination($additional_loop->max_num_pages); ?>
 		</div>
-<div class="col s12 m12 offset-m4 l4 offset-l4 pagination paginacion">
-    <?php pagination('anterior', 'siguiente'); ?>
-</div>
+
+	</div>
+	
+<!-- <div class="col s12 m12 offset-m4 l4 offset-l4 pagination paginacion">
+    <?php // pagination('anterior', 'siguiente'); ?>
+</div> -->
 
 <?php 
 get_footer();
