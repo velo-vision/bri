@@ -61,7 +61,7 @@ $url1 = $src1[0];
 		</div>
 		</div>
 
-	<div class="row" style="padding-top:80px;">
+	<div style="padding-top:80px;" class="row pading-no" >
 		<div class="col l10 offset-l1 m12 s12">
 			<?php
 				unset($posts_array[0]);
