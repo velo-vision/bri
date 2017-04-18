@@ -6,6 +6,12 @@ body{
   margin: 0px !important;
   padding: 0px !important;
 }
+
+a {
+    color: #000000;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
 /*Home*/
 /*propiedades*/
 .altura-Slider .bx-wrapper .bx-viewport {
@@ -27,6 +33,10 @@ body{
   border:none !important;
 }
 
+.img-blog2 img{
+  height:700px;
+  width: 100%;
+}
 
 .sepa{
   padding-top: 3% !important;
@@ -2632,6 +2642,18 @@ label {
 
 /*Est*/
 @media only screen and (min-width: 200px) and (max-width: 600px){
+  .img-blog2 img {
+    height: 250px;
+}
+
+#img-blog2 {
+    height: auto;
+    margin-bottom: -25px;
+}
+
+.color {
+    margin-top: -35px;
+}
 /*propiedades*/
 .altura-Slider .bx-wrapper .bx-viewport {
     height: 300px !important;
@@ -2670,6 +2692,9 @@ figure img {
 
 }
 @media only screen and (min-width: 600px) and (max-width: 992px){
+  .img-blog2 img {
+    height: 560px;
+}
 /*propiedades*/
 .altura-Slider .bx-wrapper .bx-viewport {
     height: 500px !important;
