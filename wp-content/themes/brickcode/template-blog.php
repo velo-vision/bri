@@ -1,4 +1,4 @@
-<?php 
+<?php
 /* Template name: blog*/
 
 get_header();
@@ -50,18 +50,18 @@ $url1 = $src1[0];
 
 	<div class="row" style="padding-top:80px;">
 		<div class="col l10 offset-l1 m12 s12">
-			<?php 
+			<?php
 				unset($posts_array[0]);
 			?>
-			<?php 
-				foreach ($posts_array as $key => $value) { 
+			<?php
+				foreach ($posts_array as $key => $value) {
 					$src = wp_get_attachment_image_src( get_post_thumbnail_id($value->ID), 'full' );//setoma la imagen con thumbnail_id
 					$url = $src[0];
 			?>
 			<div class="col l4 m6 s12 size">
 				<figure class="effect-bubba">
 			  		<a href="<?php echo get_permalink($value->ID); ?>"><img src="<?php echo $url; ?>" alt="Brick"></a>
-				  <figcaption>				    
+				  <figcaption>
 				  </figcaption>
 				</figure>
 				<div class="row">
@@ -82,9 +82,9 @@ $url1 = $src1[0];
 					</div>
 				</div>
 			</div>
-				<?php		
+				<?php
 					}
-				 ?>				
+				 ?>
 		</div>
 	</div>
 
@@ -155,6 +155,6 @@ $url1 = $src1[0];
 			});
 		</script>
 
- <?php 
+ <?php
 get_footer();
   ?>

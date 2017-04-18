@@ -10,7 +10,7 @@
                             <p><i class="fa fa-phone" aria-hidden="true"></i> 55 14 52 67 90</p>
                         </div>
                         <div class="col l3 phone-menu">
-                            <p><i class="fa fa-envelope" aria-hidden="true"></i> contacto@bricki.com</p>
+                            <p><i class="fa fa-envelope" aria-hidden="true"></i> contacto@brickci.com</p>
                         </div>
                         <div class="col l2 offset-l1">
                             <a href="https://www.facebook.com/" target="_blank"><div class="social-menu"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
@@ -27,11 +27,11 @@
 
                     <div class="col l12 menu-brick">
                         <ul>
-                            <li><a href="<?php bloginfo( 'url' ); ?>#nosotros"><span  class="hvr-underline-from-center">nosotros</span></a></li>
-                            <li><a href="<?php bloginfo( 'template_url'); ?>/propiedades"><span  class="hvr-underline-from-center">propiedades</span></a></li>
-                            <li><a href="<?php bloginfo( '?page_id=60' ); ?>/inversion"><span  class="hvr-underline-from-center">brick inversión inmobiliaria</span></a></li>
-                            <li><a href="<?php bloginfo( '?page_id=16' ); ?>/blog"><span  class="hvr-underline-from-center">blog</span></a></li>
-                            <li><a href="<?php bloginfo( 'url' ); ?>#contacto"><span  class="hvr-underline-from-center">contacto</span></a></li>
+                            <li><a href="<?php echo site_url();?>#nosotros"><span  class="hvr-underline-from-center">nosotros</span></a></li>
+                            <li><a href="<?php echo site_url("?page_id=53");?>/propiedades"><span  class="hvr-underline-from-center">propiedades</span></a></li>
+                            <li><a href="<?php echo site_url("?page_id=60");?>/inversion"><span  class="hvr-underline-from-center">brick inversión inmobiliaria</span></a></li>
+                            <li><a href="<?php echo site_url("?page_id=16");?>/blog"><span  class="hvr-underline-from-center">blog</span></a></li>
+                            <li><a href="<?php echo site_url();?>#contacto"><span  class="hvr-underline-from-center">contacto</span></a></li>
                         </ul>
                     </div>
                 </div>

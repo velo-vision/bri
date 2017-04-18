@@ -1,4 +1,5 @@
 .bx-wrapper .bx-controls-direction a {
+    /*background: rgba(255,255,255,.8) !important;*/
     position: absolute;
     top: 50%;
     margin-top: -16px;
@@ -10,12 +11,12 @@
 }
 
 .bx-wrapper .bx-prev {
-  left: 15px;
+  left: 5.5%;
   background: url(http://capa1.developer.velosoft.net/brick/images/propiedades01/prev.png) no-repeat !important;
 }
 
 .bx-wrapper .bx-next {
-  right: 20px;
+  right: 6.3%;
   background: url(http://capa1.developer.velosoft.net/brick/images/propiedades01/next.png) no-repeat !important;
 }
 

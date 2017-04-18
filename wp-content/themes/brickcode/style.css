@@ -63,7 +63,7 @@ body{
   color: #000000;
   display: inline;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 
+  font-weight:
   text-transform: uppercase;
   letter-spacing: 0.3em;
   font-size: 1.3em;
@@ -74,6 +74,7 @@ body{
 
 #menu ul li a{
   color:#000000;
+  text-transform: uppercase;
 }
 
 
@@ -384,7 +385,7 @@ textarea.materialize-textarea {
   font-size: 20px;
   display: inline-block;
   height: 33px;
-  margin:5px 5px !important;
+  margin:5px 30px !important;
   text-align: center;
   padding-top: 5px;
   width: 33px;
@@ -896,7 +897,7 @@ margin-left: 15px;
 .design-footer i {
     color: #8d7c6f;
     margin-right: 10px;
-    width: 100%;
+    /*width: 100%;*/
     padding: 5px;
 }
 
@@ -2280,6 +2281,12 @@ label {
 }
 
 @media only screen and (min-width:200px) and (max-width:768px){
+  .title-nosotros {
+    margin-top: -50px !important;
+}
+  .zoomIn {
+    width: 75%;
+}
   .detalles-brick img{
     width: 15px;
     height: 15px;

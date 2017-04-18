@@ -53,7 +53,7 @@
 				<div class="row" style="position:relative;z-index:5;">
 					<div class="col l12 m12 s12 content-slider">
 						<div class="slider responsive">
-							<?php 
+							<?php
 							foreach ($posts_array as $key => $value):
 								$src = wp_get_attachment_image_src( get_post_thumbnail_id($value->ID), 'full' );//setoma la imagen con thumbnail_id
 								$url = $src[0];
@@ -102,7 +102,7 @@
 				<div class="row" style="position:relative;z-index:5;">
 					<div class="col l12 m8 offset-m2 s8 offset-s2" >
 						<div class="hvr-shutter-out-horizontal btn-propiedades">
-							<a href="<?php bloginfo("url");?>/propiedades">ver todas las propiedades</a>
+							<a href="<?php echo site_url("?page_id=53");?>/propiedades">ver todas las propiedades</a>
 						</div>
 					</div>
 				</div>
@@ -134,7 +134,7 @@
 				</div>
 
 
-	<?php 
+	<?php
 	include("wcode_mailer/wcode_mailer.php");
 	if(isset($_POST)){
 		wcode_mail($_POST['email'], $_POST['nombre'], "esteban@velosoft.mx", "Contacto WEB");
