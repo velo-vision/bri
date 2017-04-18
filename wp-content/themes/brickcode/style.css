@@ -20,6 +20,14 @@ body{
 .altura-Slider .bx-wrapper .lista-slider-3 img{
   height: 20px;
 }
+
+.altura-Slider .bx-wrapper .bx-viewport {
+  left: 0px;
+  width: 100% !important;
+  border:none !important;
+}
+
+
 .sepa{
   padding-top: 3% !important;
 }
@@ -69,7 +77,23 @@ body{
 .nopadding{
   padding: 0px !important;
 }
-
+input[type=search] {
+    background: url("images/buscar.png") no-repeat scroll 0 0 transparent !important;
+    background-position: 4px 4px;
+    border: 1px solid #c9beb6;
+    border-radius: 0;
+    box-sizing: content-box;
+    box-shadow: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 2rem !important;
+    margin: 15px 0 0px 0 !important;
+    outline: none;
+    padding: 0 0 0 35px !important;
+    transition: all 0.3s;
+    width: 100%;
+}
 
 /*Menu*/
 

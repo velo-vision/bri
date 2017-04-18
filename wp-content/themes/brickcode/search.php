@@ -15,6 +15,9 @@
 			</div>
 
 		<?php endwhile; ?>
+<div class="col s12 m12 offset-m4 l4 offset-l4 pagination paginacion">
+    <?php pagination('anterior', 'siguiente'); ?>
+</div>
 
 		<div class="navigation">
 			<div class="alignleft"><?php next_posts_link('&laquo; Previous Entries') ?></div>
@@ -30,6 +33,6 @@
 
 	</div>
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>
