@@ -7,6 +7,69 @@ body{
   padding: 0px !important;
 }
 /*Home*/
+/*propiedades*/
+.altura-Slider .bx-wrapper .bx-viewport {
+    height: 1000px !important;
+}
+
+.altura-Slider .bx-wrapper img {
+    /* max-width: 100%; */
+    /* display: block; */
+    height: 1000px;
+}
+.altura-Slider .bx-wrapper .lista-slider-3 img{
+  height: 20px;
+}
+.sepa{
+  padding-top: 3% !important;
+}
+.size-propiedades{
+  width: 100%;
+  height: 300px;
+}
+
+.pagination {
+  clear:both;
+  padding:20px 0;
+  position:relative;
+  font-size:14px;
+  line-height:15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.pagination span, .pagination a {
+  display:block;
+  float:left;
+  margin: 2px 2px 2px 0;
+  padding:6px 9px 5px 9px;
+  text-decoration:none;
+  width:auto;
+  color:#000;
+  background: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+}
+
+.pagination a:hover{
+  color:#000;
+  background: #dfdfdf;
+  font-family: "Roboto", sans-serif;
+}
+
+.pagination .current{
+  padding:6px 9px 5px 9px;
+  background: #dfdfdf;
+  color:#000;
+  font-family: "Roboto", sans-serif;
+}
+/*menu propiedades*/
+.lineasepa{
+  border-bottom: solid  2px #d9d2cc;
+  padding: 0 0 14px 0 !important;
+}
+.nopadding{
+  padding: 0px !important;
+}
+
 
 /*Menu*/
 
@@ -1925,7 +1988,7 @@ figure figcaption:hover:before, figure figcaption:hover:after {
 }
 
 .pleca-brick{
-  padding-top: 120px !important;
+  top: 81% !important;
   linear-gradient(to bottom, rgba(255,255,255,-0.75) 0%, rgba(255,255,255,0.57) 11%, rgba(255,255,255,0.82) 39%, rgba(255,255,255,1) 62%)
   background: rgba(255,255,255,0.25);
   background: -moz-linear-gradient(top, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.57) 11%, rgba(255,255,255,0.82) 39%, rgba(255,255,255,1) 62%);
@@ -1935,7 +1998,7 @@ figure figcaption:hover:before, figure figcaption:hover:after {
   background: -ms-linear-gradient(top, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.57) 11%, rgba(255,255,255,0.82) 39%, rgba(255,255,255,1) 62%);
   background: linear-gradient(to bottom, rgba(255,255,255,-0.75) 0%, rgba(255,255,255,0.57) 11%, rgba(255,255,255,0.82) 39%, rgba(255,255,255,1) 62%);
   bottom:0;
-  height:300px;
+  height:200px;
   position:absolute;
   width:100%;
   z-index:10000000000000;
@@ -2538,5 +2601,36 @@ label {
  .text-brick p {
    text-align: center;
  }
+
+}
+
+/*Est*/
+@media only screen and (min-width: 200px) and (max-width: 600px){
+/*propiedades*/
+.altura-Slider .bx-wrapper .bx-viewport {
+    height: 300px !important;
+}
+.altura-Slider .bx-wrapper img {
+    height: 300px;
+}
+.altura-Slider .bx-wrapper .bx-controls-direction a {
+  display: none;
+}
+.altura-Slider .bx-wrapper .bx-viewport {
+  left: 0px;
+}
+
+}
+@media only screen and (min-width: 600px) and (max-width: 992px){
+/*propiedades*/
+.altura-Slider .bx-wrapper .bx-viewport {
+    height: 500px !important;
+}
+.altura-Slider .bx-wrapper img {
+    height: 500px;
+}
+.pleca-brick {
+    display: none;
+}
 
 }

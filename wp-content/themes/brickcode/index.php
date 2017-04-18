@@ -16,9 +16,9 @@
 	 <div class="links">
 		<ul>
 			<li><a href="<?php echo site_url();?>#nosotros">nosotros</a></li>
-			<li><a href="<?php echo site_url("?page_id=53");?>">propiedades</a></li>
-			<li><a href="<?php echo site_url("?page_id=60");?>">brick inversión inmobiliaria</a></li>
-			<li><a href="<?php echo site_url("?page_id=16");?> ">blog</a></li>
+			<li><a href="<?php echo site_url("");?>">propiedades</a></li>
+			<li><a href="<?php echo site_url("");?>">brick inversión inmobiliaria</a></li>
+			<li><a href="<?php echo site_url("");?> ">blog</a></li>
 			<li><a href="<?php echo site_url();?>#contacto">contacto</a></li>
 		</ul>
 	</div>

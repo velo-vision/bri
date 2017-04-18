@@ -5,8 +5,8 @@
                     <a href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/blog/logo.png" alt="Brick"></a>
                 </div>
                 <div class="col l9">
-                    <div class="col l12">
-                        <div class="col l3 phone-menu">
+                    <div class="col l12 lineasepa">
+                        <div class="col l3 phone-menu nopadding">
                             <p><i class="fa fa-phone" aria-hidden="true"></i> 55 14 52 67 90</p>
                         </div>
                         <div class="col l3 phone-menu">
@@ -16,7 +16,7 @@
                             <a href="https://www.facebook.com/" target="_blank"><div class="social-menu"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
                             <a href="https://twitter.com/iniciarsesion?lang=es" target="_blank"><div class="social-menu"><i class="fa fa-twitter" aria-hidden="true"></i></div></a>
                         </div>
-                        <div class="col l3">
+                        <div class="col l3 nopadding">
                             <div class="col l12 search">
                                 <p class="nomargin">
                                     <i class="fa fa-search" aria-hidden="true"></i> Buscar propiedades...
