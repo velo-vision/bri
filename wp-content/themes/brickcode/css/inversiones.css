@@ -1,0 +1,39 @@
+.bx-wrapper .bx-prev {
+  left: 0px;
+  background: url(http://capa1.developer.velosoft.net/brick/images/icon/prev.png) no-repeat !important;
+}
+
+.bx-wrapper .bx-next {
+  right: 5px;
+  background: url(http://capa1.developer.velosoft.net/brick/images/icon/next.png) no-repeat !important;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 35px;
+  height: 50px;
+  text-indent: -9999px;
+  z-index: 9;
+}
+
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search] {
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  box-sizing: content-box;
+  box-shadow: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 3rem;
+  margin: 0 0 15px 0;
+  outline: none;
+  padding: 0 0 0 10px;
+  transition: all 0.3s;
+  width: 100%;
+  font-style: normal;
+}

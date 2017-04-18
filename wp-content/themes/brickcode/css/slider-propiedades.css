@@ -1,0 +1,49 @@
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 30px;
+    height: 54px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+
+.bx-wrapper .bx-prev {
+  left: 15px;
+  background: url(http://capa1.developer.velosoft.net/brick/images/propiedades01/prev.png) no-repeat !important;
+}
+
+.bx-wrapper .bx-next {
+  right: 20px;
+  background: url(http://capa1.developer.velosoft.net/brick/images/propiedades01/next.png) no-repeat !important;
+}
+
+.bx-wrapper .bx-viewport {
+  -moz-box-shadow: 0 0 0px #ccc;
+  -webkit-box-shadow: 0 0 0px #ccc;
+  box-shadow: 0 0 0px #ccc;
+  border: 5px solid #fff;
+  border-top: none;
+  left: -5px;
+  background: #fff;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+.bx-wrapper .bx-viewport {
+    height: 100% !important;
+}
+
+
+/********medias querys Responsive*************/
+
+@media only screen and (min-width:200px) and (max-width:1200px){
+  .bx-wrapper .bx-viewport {
+    height: 100% !important;
+    width: 100%;
+  }
+}
