@@ -18,7 +18,7 @@ get_template_part( 'menu');
 	 ?>
 	<?php endwhile; else: ?>
 	<div class="entry">
-			<p>Sorry, no posts matched your criteria.</p>
+			<p>Lo sentimos, No hay marcadores para esto</p>
 	</div>
 	<?php endif; ?>
 	

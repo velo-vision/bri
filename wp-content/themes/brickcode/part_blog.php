@@ -61,10 +61,22 @@
 								<!--div class="col l6 m6 s6 text-mexico">
 									México | Historia
 								</div-->
+
+								
+
 								<div class="col l12 m12 s12 compartir center">
-									<span>Compartir</span>
-									<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="<?php echo get_permalink(); ?>">Compartir</a></div>
-									<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+																<p>Compartir</p>
+								
+								
+								<span class='st_facebook_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+								<span class='st_twitter_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+
+									<!-- <span>Compartir</span>
+									<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+										<a class="fb-xfbml-parse-ignore" target="_blank" href="<?php echo get_permalink(); ?>">Compartir</a>
+									</div>
+									<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> 
+ -->
 								</div>
 							</div>
 						</div>
@@ -97,56 +109,16 @@
 								<?php endif; ?>
 								</div>
 							</div>
-
-
-
-						<!-- Comentarios -->
-						<!-- <div class="row">
-							<div class="col l8 offset-l2 m12 s12">
-									<p class="comentario-text">Comentarios</p>
-
-								<div class="col l2 m2 s12 center">
-									<div><img src="<?php echo get_template_directory_uri(); ?>/images/blog2/user.png" alt="">
-									</div>
-								</div>
-
-									<div class=" col l10 m10 s12 comment-box">
-										<div class="comment-head">
-											<span>MIGUEL</span> <span class="color">	12 | Agosto | 2016</span>
-										</div>
-										<div class="col l12 m12 s12 comment-content">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
-											</p>
-										</div>
-									</div>
-								</div>
-							</div> -->
 						</div>
+<script>
+	!function(d,s,id){
+		var js,fjs=d.getElementsByTagName(s)[0],
+			p=/^http:/.test(d.location)?'http':'https';
 
-						<!-- <div class="row">
-							<div class="col l8 offset-l2 m8 offset-m2 s8 offset-s2 blog2" style="margin-top:30px;">
-							</div>
-						</div> -->
-
-			<!-- <div class="container">
-				<div class="row">
-					<p class="titulo-contacto">
-					<p class="comentario-text">Deja un comentario</p>
-					</p>
-					<form class="col l10 offset-l1 m10 offset-m1 s10 offset-s1" action="">
-						<div class="input-field col l6 m6 s12">
-							<textarea placeholder="Comentario" name="message" class="materialize-textarea" required></textarea>
-						</div>
-						<div class="input-field col l6 m6 s12">
-						<input placeholder="Nombre:" name="nombre" type="text" class="validate" required>
-						</div>
-						<div class="input-field col l6 m6 s12">
-						<input placeholder="Mail:" name="email" type="email" class="validate" required>
-						</div>
-							<div class="col l6 m6 s12 center">
-							<button class="btn-contacto center hvr-shutter-out-horizontal2" type="submit" name="action">COMENTAR</button>
-						</div>
-					</form>
-				</div>
-			</div> -->
+	if(!d.getElementById(id)){
+		js=d.createElement(s);js.id=id;
+			js.src=p+'://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore(js,fjs);}
+		}
+	(document, 'script', 'twitter-wjs');
+</script>

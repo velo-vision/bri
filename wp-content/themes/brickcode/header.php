@@ -20,4 +20,8 @@
 		<link href="<?php bloginfo("template_url");?>/css/screen.css" rel="stylesheet">
 		<link rel="stylesheet" href="<?php bloginfo("template_url");?>/css/slider-propiedades.css">		
 		<link rel="stylesheet" href="<?php bloginfo("template_url");?>/style.css">
+
+		<script charset="utf-8" type="text/javascript">var switchTo5x=true;</script>
+<script charset="utf-8" type="text/javascript" id="st_insights_js" src="http://w.sharethis.com/button/buttons.js?publisher=8180ba21-d97b-4eac-b863-df30dafb269b&product=sharethis-wordpress"></script>
+<script charset="utf-8" type="text/javascript">stLight.options({"publisher":"8180ba21-d97b-4eac-b863-df30dafb269b"});var st_type="wordpress4.6.4";</script>
 	</head>
