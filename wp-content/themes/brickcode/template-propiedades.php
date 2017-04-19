@@ -74,7 +74,6 @@ get_header();
 
 	<div class="row">	
 		<div class="col l12 s12">
-		<?php $additional_loop = new WP_Query("cat=1,2,3"); ?>
 	<?php foreach( $myposts as $post ) : setup_postdata($post); ?>
 		<!--  -->
 		<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($value->ID), 'slider-propiedad' );
@@ -102,14 +101,13 @@ get_header();
 				</div>
 
 	<?php endforeach; ?>
-	<?php  kriesi_pagination($additional_loop->max_num_pages); ?>
 		</div>
 
 	</div>
 	
-<!-- <div class="col s12 m12 offset-m4 l4 offset-l4 pagination paginacion">
-    <?php // pagination('anterior', 'siguiente'); ?>
-</div> -->
+ <div class="col s12 m12 offset-m4 l4 offset-l4 pagination paginacion">
+    <?php pagination('anterior', 'siguiente'); ?>
+</div>
 
 <?php 
 get_footer();

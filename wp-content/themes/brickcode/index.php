@@ -16,7 +16,8 @@
 	 <div class="links">
 		<ul>
 			<li><a href="<?php echo site_url();?>#nosotros">nosotros</a></li>
-			<li><a href="<?php echo site_url("?page_id=53");?>/propiedades">propiedades</a></li>
+			<li <?php if(is_category("4")) echo 'class="active"'; ?>><a href="<?php echo get_category_link(4); ?>">propiedades</a></li>
+			<!-- <li><a href="<?php //echo site_url("?page_id=53");?>/propiedades">propiedades</a></li> -->
 			<li><a href="<?php echo site_url("?page_id=60");?>/inversion">brick inversión inmobiliaria</a></li>
 			<li><a href="<?php echo site_url("?page_id=16");?>/blog">blog</a></li>
 			<li><a href="<?php echo site_url();?>#contacto">contacto</a></li>
@@ -26,7 +27,7 @@
 <!-- FIN MENU -->
 
 	<?php  $post = get_post(57); ?><!-- nosotros -->
-		<div class="row">
+		<div id="nosotros" class="row">
 			<div class="col l10 offset-l1 m10 offset-m1 s10 offset-s1">
 				<div class="col l6 m12 s12">
 					<p class="title-nosotros nomargin">
@@ -42,7 +43,7 @@
 			</div>
 		</div>
 <!-- propiedades -->
-			<div class="row">
+			<div  class="row">
 				<p class="propiedades">
 					propiedades
 				</p>

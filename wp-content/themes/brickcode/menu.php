@@ -30,7 +30,8 @@
                     <div class="col l12 menu-brick">
                         <ul>
                             <li><a href="<?php echo site_url();?>#nosotros"><span  class="hvr-underline-from-center">nosotros</span></a></li>
-                            <li><a href="<?php echo site_url("?page_id=53");?>/propiedades"><span  class="hvr-underline-from-center">propiedades</span></a></li>
+                            <li <?php if(is_category("4")) echo 'class="active"'; ?>><a href="<?php echo get_category_link(4); ?>"><span  class="hvr-underline-from-center">propiedades</span></a></li>
+                            <!-- <li><a href="<?php //echo site_url("?page_id=53");?>/propiedades"><span  class="hvr-underline-from-center">propiedades</span></a></li> -->
                             <li><a href="<?php echo site_url("?page_id=60");?>/inversion"><span  class="hvr-underline-from-center">brick inversión inmobiliaria</span></a></li>
                             <li><a href="<?php echo site_url("?page_id=16");?>/blog"><span  class="hvr-underline-from-center">blog</span></a></li>
                             <li><a href="<?php echo site_url();?>#contacto"><span  class="hvr-underline-from-center">contacto</span></a></li>
