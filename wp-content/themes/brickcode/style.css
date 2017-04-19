@@ -143,7 +143,7 @@ input[type=search] {
     height: 2rem !important;
     margin: 15px 0 0px 0 !important;
     outline: none;
-    padding: 0 0 0 35px !important;
+    padding: 0 35px 0 15px !important;
     transition: all 0.3s;
     width: 100%;
 }
@@ -2794,9 +2794,20 @@ figure img {
   background-size: 120% !important;
   margin-top: 75px;
 }
+.img_PROPIEDADES_bg {
+  background-size: 150% !important;
+  height: 200px;
+}
+.border-slider {
+    min-height: 330px !important;
+}
 }
 
 @media only screen and (min-width:1200px) and (max-width:1600px){
+  .img_PROPIEDADES_bg {
+    background-size: 150% !important;
+    height: 263px;
+}
 .img-variado {
   height: 600px;
   background-size: 110% !important;
