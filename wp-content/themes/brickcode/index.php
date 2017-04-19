@@ -19,7 +19,7 @@
 			<li <?php if(is_category("4")) echo 'class="active"'; ?>><a href="<?php echo get_category_link(4); ?>">propiedades</a></li>
 			<!-- <li><a href="<?php //echo site_url("?page_id=53");?>/propiedades">propiedades</a></li> -->
 			<li><a href="<?php echo site_url("?page_id=60");?>/inversion">brick inversión inmobiliaria</a></li>
-			<li><a href="<?php echo site_url("?page_id=16");?>/blog">blog</a></li>
+			<li <?php if(is_category("1")) echo 'class="active"'; ?>><a href="<?php echo get_category_link(1); ?>">blog</a></li>
 			<li><a href="<?php echo site_url();?>#contacto">contacto</a></li>
 		</ul>
 	</div>
