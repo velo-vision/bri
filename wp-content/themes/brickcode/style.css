@@ -38,6 +38,11 @@ a {
   width: 100%;
 }
 
+.margin-sig{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 .sepa{
   padding-top: 3% !important;
 }
@@ -59,25 +64,37 @@ a {
   display:block;
   float:left;
   margin: 2px 2px 2px 0;
-  padding:6px 9px 5px 9px;
+  padding:6px 19px 5px 19px;
   text-decoration:none;
+  padding-top: 3px;
+  height: 20px !important;
   width:auto;
   color:#000;
-  background: #f7f7f7;
-  font-family: "Roboto", sans-serif;
+  font-size: 18px !important;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .pagination a:hover{
   color:#000;
-  background: #dfdfdf;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 19px !important;
+  font-weight: 600;
+}
+
+.page-numbers{
+  border-right: 1px solid;
+}
+
+.pagination .next {
+  border: none;
 }
 
 .pagination .current{
-  padding:6px 9px 5px 9px;
-  background: #dfdfdf;
   color:#000;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 19px !important;
+  font-weight: bold;
+  padding:3px 19px 5px 19px;
 }
 /*menu propiedades*/
 .lineasepa{
@@ -569,6 +586,7 @@ margin: 0 10px 0 10px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 23px;
   text-align: justify;
   padding-left: 5% !important;
 }
@@ -955,8 +973,10 @@ margin-left: 15px;
 /** =====================
  * Responsive
  ========================*/
- @media only screen and (min-width:992px) and (max-width:1700px){
-
+ @media only screen and (min-width:992px) and (max-width:1930px){
+   .pagination {
+       padding-left: 100px !important;
+   }
    .blog span {
        border-bottom: 1px solid #d3cac4;
        padding: 10px 0px;
@@ -2706,4 +2726,26 @@ figure img {
     display: none;
 }
 
+}
+/*Query JRG*/
+@media only screen and (min-width:600px) and (max-width:768px){
+.img-variado {
+  height: 385px;
+}
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+.img-variado {
+  height: 600px;
+  background-size: 120% !important;
+  margin-top: 75px;
+}
+}
+
+@media only screen and (min-width:1200px) and (max-width:1600px){
+.img-variado {
+  height: 600px;
+  background-size: 110% !important;
+  margin-top: 5px;
+}
 }

@@ -69,7 +69,7 @@ get_header(); ?>
         </div>
     <?php endif; ?>
     <!-- slider fin -->
-<div class="row">   
+<div class="row">
     <div class="col l12 s12">
     <?php if (have_posts()) : while (have_posts()) : the_post();  ?>
     <!--  -->
@@ -97,13 +97,20 @@ get_header(); ?>
                     </div>
                 </div>
     <?php endwhile; ?>
-<div class="col s12 m12 offset-m4 l4 offset-l4 pagination paginacion center-align ">
-            <?php pagination('anterior', 'siguiente'); ?>
+    <!-- Paginacion -->
+        <div class="col s12 m12 l12 pagination paginacion center-align ">
+          <div class="col l5 m5 s4">
+              <p>&nbsp</p>
+          </div>
+          <div class="col l7 m7 s7">
+            <?php pagination('<', '>'); ?>
+          </div>
         </div>
+      <!-- Fin Paginacion -->
     </div>
 </div>
 
-        
+
     <?php else: ?>
         <div class="col s12 m12 l12 center-align">
             <p>¡Ups! Lo Sentimos, No encontramos coincidencias, Intenta con otra Busqueda...</p>

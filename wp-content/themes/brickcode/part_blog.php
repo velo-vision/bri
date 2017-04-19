@@ -20,16 +20,15 @@
 			<div class="row">
 				<div class="col l12 m12 s12">
 						<div id="img-blog2" class="img-blog2">
-							<?php echo get_the_post_thumbnail( null, 'full' ); ?>
+							<?php echo get_the_post_thumbnail( null, 'full' ); 
+              ?>
 						</div>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col l8 offset-l2  m8 offset-m2 s12 blog">
-					<p>
 						<span><?php the_title() ?></span>
-					</p>
 				</div>
 			</div>
 		</div>
@@ -46,8 +45,6 @@
 						</div>
 					</div>
 				</div>
-
-
 					<div class="row">
 						<div class="col l10 offset-l1 m10 offset-m1 s12 text">
 							<?php the_content(); ?>
@@ -76,7 +73,7 @@
 
 
 						<div class="row center">
-							<div class="col l12 m12 s10 offset-s1 center">
+							<div class="col l12 m12 s10 offset-s1 center margin-sig">
 								<?php if ( !empty( $prev_post ) ) : ?>
 									<div class="col l6 m6 s6 anterior"  >
 										<div class="col l1 m2 s5">
@@ -127,12 +124,12 @@
 							</div> -->
 						</div>
 
-						<div class="row">
+						<!-- <div class="row">
 							<div class="col l8 offset-l2 m8 offset-m2 s8 offset-s2 blog2" style="margin-top:30px;">
 							</div>
-						</div>
+						</div> -->
 
-			<div class="container">
+			<!-- <div class="container">
 				<div class="row">
 					<p class="titulo-contacto">
 					<p class="comentario-text">Deja un comentario</p>
@@ -152,4 +149,4 @@
 						</div>
 					</form>
 				</div>
-			</div>
+			</div> -->

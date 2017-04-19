@@ -1,4 +1,4 @@
-<?php 
+<?php
 /* Template name: propiedades*/
 get_header();
 ?>
@@ -70,9 +70,9 @@ get_header();
 	$args = array( "posts_per_page" => 3, "offset"=> 0, "category" => 4 ); //categoria propeidades
 	$myposts = get_posts( $args );?>
 
-	
 
-	<div class="row">	
+
+	<div class="row">
 		<div class="col l12 s12">
 	<?php foreach( $myposts as $post ) : setup_postdata($post); ?>
 		<!--  -->
@@ -104,11 +104,11 @@ get_header();
 		</div>
 
 	</div>
-	
- <div class="col s12 m12 offset-m4 l4 offset-l4 pagination paginacion">
+
+ <div class="col s12 m12 offset-m4 l12 pagination paginacion">
     <?php pagination('anterior', 'siguiente'); ?>
 </div>
 
-<?php 
+<?php
 get_footer();
   ?>

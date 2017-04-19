@@ -7,7 +7,7 @@ if ( function_exists('register_sidebars') ){
 }
 
 function wpdocs_custom_excerpt_length( $length ) {
-   return 200;
+   return 150;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
@@ -16,7 +16,7 @@ add_image_size( 'full-propiedad', 1281, 875, false );
 
 ?>
 
-<?php 
+<?php
 function pagination($prev = '', $next = '') {
     global $wp_query, $wp_rewrite;
     $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
@@ -37,10 +37,10 @@ function pagination($prev = '', $next = '') {
 };
  ?>
 
-<?php 
+<?php
 // function kriesi_pagination($pages = '', $range = 3)
-// {  
-//      $showitems = ($range * 2)+1;  
+// {
+//      $showitems = ($range * 2)+1;
 
 //      global $paged;
 //      if(empty($paged)) $paged = 1;
@@ -53,7 +53,7 @@ function pagination($prev = '', $next = '') {
 //          {
 //              $pages = 1;
 //          }
-//      }   
+//      }
 
 //      if(1 != $pages)
 //      {
@@ -69,7 +69,7 @@ function pagination($prev = '', $next = '') {
 //              }
 //          }
 
-//          if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";  
+//          if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";
 //          if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
 //          echo "</div>\n";
 //      }
