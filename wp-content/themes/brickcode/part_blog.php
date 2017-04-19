@@ -20,7 +20,7 @@
 			<div class="row">
 				<div class="col l12 m12 s12">
 						<div id="img-blog2" class="img-blog2">
-							<?php echo get_the_post_thumbnail( null, 'full' ); 
+							<?php echo get_the_post_thumbnail( null, 'full' );
               ?>
 						</div>
 				</div>
@@ -58,16 +58,8 @@
 
 						<div class="row" >
 							<div class="col l12 m8 offset-m2 s12">
-								<!--div class="col l6 m6 s6 text-mexico">
-									México | Historia
-								</div-->
-
-								
-
 								<div class="col l12 m12 s12 compartir center">
-																<p>Compartir</p>
-								
-								
+									<p>Compartir</p>
 								<span class='st_facebook_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
 								<span class='st_twitter_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
 
@@ -77,7 +69,9 @@
 									</div>
 									<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> 
  -->
+
 								</div>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 							</div>
 						</div>
 					<?php $prev_post = get_previous_post(); ?>
