@@ -71,15 +71,20 @@ if(is_category("4")){ ?>
     <?php endif; ?>
     <!-- slider fin -->
 <div class="row">   
-    <div class="col l12 s12">
+    <div class="col l12 m12 s12">
     <?php if (have_posts()) : while (have_posts()) : the_post();  ?>
     <!--  -->
         <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($value->ID), 'slider-propiedad' );
             $url = $src[0]; ?>
+
                 <div class="col l4 m6 s12">
                     <div class="col l12 s12 border-slider nomargin">
-                        <div><img  class="size-propiedades" src="<?php echo $url; ?>" alt="<?php echo $value->post_title ?>"/></div>
-                        <div class="col l12 s12 detalles-brick ">
+                        <div>
+                            <?php echo '<li class="img_PROPIEDADES_bg" style="background: url('. $url.')">'; ?>
+                            <!-- <img  class="size-propiedades" src="<?php // echo $url; ?>" alt="<?php // echo $value->post_title ?>"/> -->
+                        </div>
+
+                        <div class="col l12 m12 s12 detalles-brick ">
                             <div class="col l6 s12">
                                 <p><strong> <?php echo the_title(); ?></strong></p>
                                 <p style="color:#282828"><span><?php echo get_field("colonia", $value->ID); ?></span></p>
@@ -91,7 +96,7 @@ if(is_category("4")){ ?>
                             </div>
                         </div>
                     </div>
-                    <div class="col l12 s12">
+                    <div class="col l12 m12 s12">
                         <a href="<?php echo get_permalink($value->ID); ?>"><p class="detalle-propiedad2">
                             detalle de propiedad
                         </p></a>
@@ -181,7 +186,9 @@ if(is_category("4")){ ?>
         ?>
         <div class="col l4 m6 s12 size">
             <figure class="effect-bubba">
-                <a href="<?php echo get_permalink($value->ID); ?>"><img src="<?php echo $url; ?>" alt="Brick"></a>
+                <a href="<?php echo get_permalink($value->ID); ?>">
+                    <?php echo '<li class="img_PROPIEDADES_bg" style="background: url('. $url.')">'; ?>
+                <!-- <img src="<?php // echo $url; ?>" alt="Brick"></a> -->
               <figcaption>
               </figcaption>
             </figure>
