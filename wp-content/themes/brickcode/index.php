@@ -103,7 +103,7 @@
 				<div class="row" style="position:relative;z-index:5;">
 					<div class="col l12 m8 offset-m2 s8 offset-s2" >
 						<div class="hvr-shutter-out-horizontal btn-propiedades">
-							<a href="<?php echo site_url("?page_id=53");?>/propiedades">ver todas las propiedades</a>
+							<a href="<?php echo get_category_link(4); ?>/propiedades">ver todas las propiedades</a>
 						</div>
 					</div>
 				</div>

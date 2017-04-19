@@ -71,7 +71,7 @@ if(is_category("4")){ ?>
     <?php endif; ?>
     <!-- slider fin -->
 
-<div class="row">   
+<div class="row">
     <div class="col l12 m12 s12">
     <?php if (have_posts()) : while (have_posts()) : the_post();  ?>
     <!--  -->
@@ -91,7 +91,7 @@ if(is_category("4")){ ?>
                                 <p style="color:#282828"><span><?php echo get_field("colonia", $value->ID); ?></span></p>
                             </div>
                             <div class="col l6 s12">
-                                <p style="padding-top:15px;">
+                                <p style="padding-top:4px;">
                                     <b>$ <?php echo get_field("precio", $value->ID); ?></b>
                                 </p>
                             </div>

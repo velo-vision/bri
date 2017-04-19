@@ -37,7 +37,7 @@
 						<a class=" detalles-boton btn"><?php echo $transaccion; ?></a>
 				</div>
 			</div>
-			<div class="col l10 offset-l1 m12 s12 nomargin" >
+			<div class="col l10 offset-l1 m12 s12 nomargin detalle-text" >
 				<p class="border-info" style="margin-top: 20px;">
 					<?php the_content(); ?>
 				</p>
@@ -108,7 +108,7 @@ $posts_array = get_posts( $args ); ?>
 <div class="row" style="position:relative;z-index:5;">
 		<div class="col l12 m12 s12 content-slider">
 			<div class="slider responsive">
-				<?php 
+				<?php
 				foreach ($posts_array as $key => $value):
 					$src = wp_get_attachment_image_src( get_post_thumbnail_id($value->ID), 'full' );//setoma la imagen con thumbnail_id
 					$url = $src[0];
@@ -150,7 +150,7 @@ $posts_array = get_posts( $args ); ?>
 				</div>
 
 				<?php endforeach; ?>
-				
+
 			</div>
 		</div>
 	</div>

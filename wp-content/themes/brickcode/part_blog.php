@@ -20,7 +20,7 @@
 			<div class="row">
 				<div class="col l12 m12 s12">
 						<div id="img-blog2" class="img-blog2">
-							<?php echo get_the_post_thumbnail( null, 'full' ); 
+							<?php echo get_the_post_thumbnail( null, 'full' );
               ?>
 						</div>
 				</div>
@@ -64,8 +64,9 @@
 								<div class="col l12 m12 s12 compartir center">
 									<span>Compartir</span>
 									<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="<?php echo get_permalink(); ?>">Compartir</a></div>
-									<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+									<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 								</div>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 							</div>
 						</div>
 					<?php $prev_post = get_previous_post(); ?>

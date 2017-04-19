@@ -89,6 +89,12 @@ a {
   border: none;
 }
 
+.detalle-text p{
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 20px;
+}
+
 .pagination .current{
   color:#000;
   font-family: 'Josefin Sans', sans-serif;
@@ -97,7 +103,7 @@ a {
   padding:3px 19px 5px 19px;
 }
 .img_PROPIEDADES_bg{
-  background-size: 140% !important;
+  background-size: 130% !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
   height: 300px;
@@ -115,7 +121,7 @@ a {
   padding: 0px !important;
 }
 input[type=search] {
-    background: url("images/buscar.png") no-repeat scroll 0 0 transparent !important;
+    /*background: url("images/buscar.png") no-repeat scroll 0 0 transparent !important;*/
     background-position: 4px 4px;
     border: 1px solid #c9beb6;
     border-radius: 0;
@@ -1062,10 +1068,24 @@ margin-left: 15px;
 
 
  }
+  @media only screen and (min-width:992px) and (max-width:1200px){
+    .border-slider {
+      min-height: 385px !important;
+  }
+  .img_PROPIEDADES_bg {
+      background-size: 133% !important;
+      height: 246px;
+  }
+  }
 
  @media only screen and (min-width:768px) and (max-width:992px){
-
-
+   .border-slider {
+     min-height: 415px !important;
+ }
+ .img_PROPIEDADES_bg {
+     background-size: 120% !important;
+     height: 246px;
+ }
    .blog span {
        border-bottom: 1px solid #d3cac4;
        padding: 10px 0px;
@@ -2672,6 +2692,13 @@ label {
 
 /*Est*/
 @media only screen and (min-width: 200px) and (max-width: 600px){
+  .border-slider {
+    min-height: 355px !important;
+}
+.img_PROPIEDADES_bg {
+    background-size: 110% !important;
+    height: 186px;
+}
   .img-blog2 img {
     height: 250px;
 }
@@ -2739,6 +2766,13 @@ figure img {
 }
 /*Query JRG*/
 @media only screen and (min-width:600px) and (max-width:768px){
+  .border-slider {
+    min-height: 375px !important;
+}
+.img_PROPIEDADES_bg {
+    background-size: 120% !important;
+    height: 206px;
+}
 .img-variado {
   height: 385px;
 }
