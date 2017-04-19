@@ -96,6 +96,16 @@ a {
   font-weight: bold;
   padding:3px 19px 5px 19px;
 }
+.img_PROPIEDADES_bg{
+  background-size: 140% !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  height: 300px;
+  list-style: none;
+  background-attachment: scroll !important;
+
+}
+
 /*menu propiedades*/
 .lineasepa{
   border-bottom: solid  2px #d9d2cc;
