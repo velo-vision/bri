@@ -4,7 +4,7 @@
 
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
-		
+
 <div class="entry">
 		<h2>Search Results</h2>
 
@@ -15,9 +15,14 @@
 			</div>
 
 		<?php endwhile; ?>
-<div class="col s12 m12 offset-m4 l4 offset-l4 pagination paginacion">
-    <?php pagination('anterior', 'siguiente'); ?>
-</div>
+		<div class="col s12 m12 l12 pagination paginacion center-align ">
+			<div class="col l5 m5 s4">
+					<p>&nbsp</p>
+			</div>
+			<div class="col l7 m7 s7">
+				<?php pagination('<', '>'); ?>
+			</div>
+		</div>
 
 		<div class="navigation">
 			<div class="alignleft"><?php next_posts_link('&laquo; Previous Entries') ?></div>

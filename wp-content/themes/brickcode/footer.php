@@ -59,11 +59,28 @@
 			</div>
 		</footer>
 
+
+
+ 		<!-- <script src="<?php//  bloginfo("template_url");?>/js/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php // bloginfo("template_url");?>/js/materialize.js"></script>
+        <script src="<?php // bloginfo("template_url");?>/js/wow.min.js"></script> -->
+        <!--slider carrusel-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php bloginfo("template_url");?>/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="<?php bloginfo("template_url");?>/js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="<?php bloginfo("template_url");?>/js/jquery.contentcarousel.js"></script>
+        <script type="text/javascript">
+            $('#ca-container').contentcarousel();
+        </script>
+
+
 		<script src="<?php bloginfo("template_url");?>/js/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo("template_url");?>/js/materialize.js"></script>
 		<script src="<?php bloginfo("template_url");?>/js/wow.min.js"></script>
 		<script src="<?php bloginfo("template_url");?>/js/jquery.bxslider.js"></script>
 		<script src="<?php bloginfo("template_url");?>/js/slick.min.js"></script>
+
+
 
 		<?php global $detallePropiedad;
 		if(isset($detallePropiedad)): //Declaramos esta variable cuando estemos en el detalle de una propiedad ?>
