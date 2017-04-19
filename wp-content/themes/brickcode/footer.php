@@ -12,7 +12,7 @@
 								</p></a>
 							</div>
 							<div class="col l3 s6">
-								<a href="<?php echo site_url("?page_id=53");?>/propiedades"><p>
+								<a href="<?php echo get_category_link(4); ?>"><p>
 									propiedades
 								</p></a>
 							</div>
@@ -24,7 +24,7 @@
 						</div>
 						<div class="col l12 s12">
 							<div class="col l3 s6">
-								<a href="<?php echo site_url("?page_id=16");?>/blog"><p>
+								<a href="<?php echo get_category_link(1); ?>"><p>
 									blog
 								</p></a>
 							</div>
