@@ -52,21 +52,13 @@
 
             <div class="menu">
                 <ul>
-                    <a href="<?php bloginfo( 'url' ); ?>#nosotros">
-                        <li>nosotros</li>
-                    </a>
-                    <a href="<?php bloginfo( 'url' ); ?>/propiedades">
-                        <li>propiedades</li>
-                    </a>
-                    <a href="<?php bloginfo( 'url' ); ?>/inversion">
-                        <li>Brick inversión inmobiliaria</li>
-                    </a>
-                    <a href="<?php bloginfo( 'url' ); ?>/blog">
-                        <li>blog</li>
-                    </a>
-                    <a href="<?php bloginfo( 'url' ); ?>#contacto">
-                        <li>contacto</li>
-                    </a>
+                    <li><a href="<?php echo site_url();?>#nosotros"><span  class="hvr-underline-from-center">nosotros</span></a></li>
+                    <li <?php if(is_category("4")) echo 'class="active"'; ?>><a href="<?php echo get_category_link(4); ?>"><span  class="hvr-underline-from-center">propiedades</span></a></li>
+                    <!-- <li><a href="<?php //echo site_url("?page_id=53");?>/propiedades"><span  class="hvr-underline-from-center">propiedades</span></a></li> -->
+                    <li><a href="<?php echo site_url("?page_id=60");?>/inversion"><span  class="hvr-underline-from-center">brick inversión inmobiliaria</span></a></li>
+                    <li <?php if(is_category("1")) echo 'class="active"'; ?>><a href="<?php echo get_category_link(1); ?>"><span  class="hvr-underline-from-center">blog</span></a></li>
+                     <!-- <li><a href="<?php //echo site_url("?page_id=16");?>/blog"><span  class="hvr-underline-from-center">blog</span></a></li>  -->
+                    <li><a href="<?php echo site_url();?>#contacto"><span  class="hvr-underline-from-center">contacto</span></a></li>
                 </ul>
             </div>
         </div>

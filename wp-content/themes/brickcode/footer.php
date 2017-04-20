@@ -227,6 +227,10 @@
 					$(".hamburger").show();
 				});
 			});
+
+			$(document).ready(function(){
+            $('.modal-trigger').leanModal();
+        });
 		</script>
 	</body>
 </html>

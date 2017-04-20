@@ -2756,9 +2756,14 @@ figure img {
   margin-top: 6px !important;
 }
 
-
+.sin-margin-aqui{
+  margin: 0px !important;
+}
 }
 @media only screen and (min-width: 600px) and (max-width: 992px){
+    #img-blog2 {
+    height: 60vh;
+}
   .img-blog2 img {
     height: 560px;
 }
