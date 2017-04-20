@@ -85,7 +85,7 @@
 												</div>
 												<div class="col l6 m12 s12 nomargin">
 													<a href="<?php echo get_permalink($value->ID); ?>"><p class="ver-mas-detalles">
-														VER DETALLES DE PROPIEDAD
+														VER DETALLES DE LA PROPIEDAD
 													</p></a>
 												</div>
 											</div>
@@ -108,29 +108,7 @@
 				</div>
 
 				<div class="row" id="contacto">
-					<p class="titulo-contacto">
-						CONTACTO
-					</p>
-					<P class="subtitulo-contacto">
-						¿Tienes alguna pregunta y/o comentario?
-					</P>
-					<form class="col l10 offset-l1 s12" action="">
-						<div class="col l4 s12">
-							<input placeholder="Nombre:" name="nombre" type="text" class="validate" required>
-						</div>
-						<div class="col l4 s12">
-							<input placeholder="Teléfono:" name="telefono" type="tel" class="validate" required>
-						</div>
-						<div class="col l4 s12">
-							<input placeholder="Correo:" name="email" type="email" class="validate" required>
-						</div>
-						<div class="col l12 s12">
-							<textarea placeholder="Mensaje" name="message" class="materialize-textarea" required></textarea>
-						</div>
-						<div class="col l12 s8 offset-s2 center">
-							<button class="btn-contacto center hvr-shutter-out-horizontal2" type="submit" name="action">ENVIAR</button>
-						</div>
-					</form>
+				<?php echo do_shortcode('[contact-form-7 id="128" title="contactoHome"]'); ?>					
 				</div>
 
 

@@ -49,7 +49,7 @@
 							</div>
 						</div>
 						<div class="col l12 s12" style="text-align:center;">
-							<p class="nomargin">Dirección: Guillermo Gonzalez Camarena #999, Int. PH 4403. Santa Fe, 01219 Mexico DF</p>
+							<p class="nomargin">Dirección: Guillermo Gonzalez Camarena #999, Int. PH 4403. Santa Fe, 01219 México DF</p>
 						</div>
 						<div class="col l12 s12" style="text-align:center;">
 							<p>@2016 All Rights Reserved. Designed by Velosoft</p>

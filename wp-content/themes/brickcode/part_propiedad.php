@@ -76,7 +76,7 @@
 
 		<div class="row">
 			<P class="subtitulo-contacto" style="padding-top:40px;">
-				¿Quieres saber mas acerca de esta propiedad?
+				¿Quieres saber más acerca de esta propiedad?
 			</P>
 			<form class="col l10 offset-l1 m10 offset-m1 s10 offset-s1" action="">
 				<div class="col l4 m12 s12">
@@ -140,7 +140,7 @@ $posts_array = get_posts( $args ); ?>
 									</div>
 									<div class="col l6 m12 s12 nomargin">
 										<a href="<?php echo get_permalink($value->ID); ?>"><p class="ver-mas-detalles">
-											VER DETALLES DE PROPIEDAD
+											VER DETALLES DE LA PROPIEDAD
 										</p></a>
 									</div>
 								</div>

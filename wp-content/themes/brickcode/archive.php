@@ -30,7 +30,7 @@ if(is_category("4")){ ?>
                         <div class="col l6 m12 center sepa">
                             <div class="col l6 offset-l3 m12">
                                 <a href="<?php echo get_permalink($value->ID); ?>"><p class="ver-mas-detalles">
-                                    VER DETALLES DE PROPIEDAD
+                                    VER DETALLES DE LA PROPIEDAD
                                 </p></a>
                             </div>
                             <div class="col l12 m12">
@@ -99,7 +99,7 @@ if(is_category("4")){ ?>
                     </div>
                     <div class="col l12 m12 s12">
                         <a href="<?php echo get_permalink($value->ID); ?>"><p class="detalle-propiedad2">
-                            detalle de propiedad
+                            detalle de la propiedad
                         </p></a>
                     </div>
                 </div>
